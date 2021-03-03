@@ -262,6 +262,7 @@ public class MessageActivity extends AppCompatActivity {
                     sendMessage(myHalf);
                 } else {
                     Toast.makeText(getApplicationContext(), "Download wasn't successful", Toast.LENGTH_SHORT).show();
+                    Log.e("Download", "failed");
                 }
             }
         });
