@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messagesListView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="24dp"
+        android:text="Message"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/writeMsgTxt"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:hint="Write your message"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/writeMsgTxt"
+        android:layout_marginBottom="11dp"
+        android:text="Download" />
+
+    <TextView
+        android:id="@+id/connStatusTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStatus"
+        android:layout_marginTop="12dp"
+        android:text="Connection Status"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/messagesListView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/connStatusTxt"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/testImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txtMsg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="56dp" />
+
+    <Button
+        android:id="@+id/testLoadImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMsg"
+        android:layout_marginTop="64dp"
+        android:text="LoadImage" />
+
+    <Button
+        android:id="@+id/loadFile"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messagesListView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:text="LD"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/sendFile"
+        android:layout_width="37dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadFile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="9dp"
+        android:text="Sd"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/saveFile"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendFile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:text="Sv"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="0dp"
+        android:text="Send" />
+</RelativeLayout>
